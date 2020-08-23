@@ -10,8 +10,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php echo $title;?></title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <title>SMAIT ASY-SYUKRIYYAH</title>
+    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/iconsmait.jpg'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -43,42 +43,42 @@
 <body>
   <!--============================= HEADER =============================-->
   <div class="header-topbar">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-6 col-sm-8 col-md-9">
-                  <div class="header-top_address">
-                      <div class="header-top_list">
-                          <span class="icon-phone"></span>00 55 22 66
-                      </div>
-                      <div class="header-top_list">
-                          <span class="icon-envelope-open"></span>info@mschool.com
-                      </div>
-                      <div class="header-top_list">
-                          <span class="icon-location-pin"></span>Padang, Sumatera Barat, INA. 11001
-                      </div>
-                  </div>
-                  <div class="header-top_login2">
-                      <a href="<?php echo site_url('contact');?>">Hubungi Kami</a>
-                  </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="header-top_login mr-sm-3">
-                      <a href="<?php echo site_url('contact');?>">Hubungi Kami</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
-      <div class="container nav-menu2">
-          <div class="row">
-              <div class="col-md-12">
-                  <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
-                      <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                          <span class="icon-menu"></span>
-                      </button>
-                      <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>
-                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-9">
+                    <div class="header-top_address">
+                        <div class="header-top_list">
+                            <span class="icon-phone"></span>021 557 40878
+                        </div>
+                        <div class="header-top_list">
+                            <span class="icon-envelope-open"></span>smait@asy-syukriyyah.sch.id
+                        </div>
+                        <div class="header-top_list">
+                            <span class="icon-location-pin"></span>Cipondoh,Kota Tangerang , 15141
+                        </div>
+                    </div>
+                    <div class="header-top_login2">
+                        <a href="<?php echo site_url('contact');?>">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="header-top_login mr-sm-3">
+                        <a href="<?php echo site_url('contact');?>">Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-toggle="affix">
+        <div class="container nav-menu2">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
+                        <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'theme/images/logo1.png'?>"></a>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
@@ -108,7 +108,7 @@
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('pendaftaran');?>">pendaftaran</a>
+                                  <a class="nav-link" href="http://ppdb.asy-syukriyyah.sch.id/">pendaftaran</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Contact</a>
@@ -116,11 +116,11 @@
 
                              </ul>
                         </div>
-                </nav>
-              </div>
+                    </nav>
+                </div>
             </div>
-          </div>
         </div>
+      </div>
     <section>
 </section>
 <!--//END HEADER -->
@@ -295,9 +295,10 @@
             <div class="col-md-3">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
+                        <img src="<?php echo base_url().'theme/images/logo1.png'?>" class="img-fluid" alt="footer_logo">
+                        <hr>
                     </a>
-                    <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
+                    
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -327,13 +328,15 @@
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
-                        <p>Email : info@mschool.com
-                            <br> Phone : +91 555 668 986</p>
+                        <p><span>Alamat: </span> Jl. KH Hasyim Ashari No.KM. 3, RT.003/RW.002, Poris Plawad Indah, Kec. Cipondoh, Kota Tangerang, Banten 15141</p>
+                        <p>Email : smait@asy-syukriyyah.sch.id
+                            <br> Phone : 021 5574 40878</p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                               
+                                <li><a href="#"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a></li>
+                                <li><a href="#"><img src="<?php echo base_url().'theme/images/ig_icon.png'?>" height="48px"; width="67px";> </img></a></li>
+
                             </ul>
                         </div>
                     </div>

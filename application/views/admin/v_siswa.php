@@ -10,10 +10,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>M-Sekolah | Data Siswa</title>
+  <title>Administrator | Prestasi Siswa</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/iconsmait.jpg'?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
@@ -131,19 +131,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
-            <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-
+            <li class="active"><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Prestasi Siswa</a></li>
+          
           </ul>
         </li>
-        <li>
-          <a href="<?php echo base_url().'admin/pendaftaran'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Calon Siswa</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
+      
 
         <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
@@ -164,7 +156,7 @@
         </li>
 
          <li>
-          <a href="<?php echo base_url().'administrator/logout'?>">
+          <a href="<?php echo base_url().'admin/login'?>">
             <i class="fa fa-sign-out"></i> <span>Sign Out</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
@@ -211,7 +203,7 @@
           					<th>NIS</th>
           					<th>Nama</th>
           					<th>Jenis Kelamin</th>
-                    <th>Kelas</th>
+                    <th>Prestasi</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
@@ -224,8 +216,8 @@
           					   $nis=$i['siswa_nis'];
           					   $nama=$i['siswa_nama'];
           					   $jenkel=$i['siswa_jenkel'];
-          					   $kelas_id=$i['siswa_kelas_id'];
-                       $kelas_nama=$i['kelas_nama'];
+          					   $prestasi=$i['siswa_prestasi'];
+                      
                        $photo=$i['siswa_photo'];
 
                     ?>
@@ -242,7 +234,7 @@
                   <?php else:?>
                   <td>Perempuan</td>
                   <?php endif;?>
-                  <td><?php echo $kelas_nama;?></td>
+                  <td><?php echo $prestasi;?></td>
                   <td style="text-align:right;">
                         <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
                         <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
@@ -263,12 +255,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2017 <a href="http://mfikri.com">M Fikri Setiadi</a>.</strong> All rights reserved.
-  </footer>
+  <?php include 'footer.php'; ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -506,19 +493,9 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Kelas</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Prestasi</label>
                                         <div class="col-sm-7">
-                                          <select name="xkelas" class="form-control" required>
-                                            <option value="">-Pilih-</option>
-                                            <?php
-                                                foreach ($kelas->result_array() as $k) {
-                                                  $id_kelas=$k['kelas_id'];
-                                                  $nm_kelas=$k['kelas_nama'];
-
-                                            ?>
-                                            <option value="<?php echo $id_kelas;?>"><?php echo $nm_kelas;?></option>
-                                            <?php } ?>
-                                          </select>
+                                         <input type="text" name="xprestasi" class="form-control" id="inputUserName" placeholder="Prestasi" required>
                                         </div>
                                     </div>
 
@@ -546,7 +523,7 @@
               $nis=$i['siswa_nis'];
               $nama=$i['siswa_nama'];
               $jenkel=$i['siswa_jenkel'];
-              $kelas_id=$i['siswa_kelas_id'];
+              $Prestasi=$i['siswa_prestasi'];
               $photo=$i['siswa_photo'];
             ?>
 
@@ -603,21 +580,7 @@
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Kelas</label>
                                         <div class="col-sm-7">
-                                          <select name="xkelas" class="form-control" required>
-                                            <option value="">-Pilih-</option>
-                                            <?php
-                                                foreach ($kelas->result_array() as $k) {
-                                                  $id_kelas=$k['kelas_id'];
-                                                  $nm_kelas=$k['kelas_nama'];
-
-                                            ?>
-                                            <?php if($id_kelas==$kelas_id):?>
-                                              <option value="<?php echo $id_kelas;?>" selected><?php echo $nm_kelas;?></option>
-                                            <?php else:?>
-                                              <option value="<?php echo $id_kelas;?>"><?php echo $nm_kelas;?></option>
-                                            <?php endif;?>
-                                            <?php } ?>
-                                          </select>
+                                      <input type="text" name="xprestasi" value="<?php echo $prestasi;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
 
@@ -645,7 +608,7 @@
               $nis=$i['siswa_nis'];
               $nama=$i['siswa_nama'];
               $jenkel=$i['siswa_jenkel'];
-              $kelas_id=$i['siswa_kelas_id'];
+              $prestasi=$i['siswa_prestasi'];
               $photo=$i['siswa_photo'];
             ?>
 	<!--Modal Hapus Pengguna-->

@@ -8,13 +8,13 @@ class Siswa extends CI_Controller{
         };
 		$this->load->model('m_siswa');
 		$this->load->model('m_pengguna');
-		$this->load->model('m_kelas');
+		
 		$this->load->library('upload');
 	}
 
 
 	function index(){
-		$x['kelas']=$this->m_kelas->get_all_kelas();
+		
 		$x['data']=$this->m_siswa->get_all_siswa();
 		$this->load->view('admin/v_siswa',$x);
 	}
@@ -46,9 +46,9 @@ class Siswa extends CI_Controller{
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
-							$kelas=strip_tags($this->input->post('xkelas'));
+							$prestasi=strip_tags($this->input->post('xprestasi'));
 
-							$this->m_siswa->simpan_siswa($nis,$nama,$jenkel,$kelas,$photo);
+							$this->m_siswa->simpan_siswa($nis,$nama,$jenkel,$prestasi,$photo);
 							echo $this->session->set_flashdata('msg','success');
 							redirect('admin/siswa');
 					}else{
@@ -60,9 +60,9 @@ class Siswa extends CI_Controller{
 	            	$nis=strip_tags($this->input->post('xnis'));
 					$nama=strip_tags($this->input->post('xnama'));
 					$jenkel=strip_tags($this->input->post('xjenkel'));
-					$kelas=strip_tags($this->input->post('xkelas'));
+					$prestasi=strip_tags($this->input->post('xprestasi'));
 
-					$this->m_siswa->simpan_siswa_tanpa_img($nis,$nama,$jenkel,$kelas);
+					$this->m_siswa->simpan_siswa_tanpa_img($nis,$nama,$jenkel,$prestasi);
 					echo $this->session->set_flashdata('msg','success');
 					redirect('admin/siswa');
 				}
@@ -101,9 +101,9 @@ class Siswa extends CI_Controller{
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
-							$kelas=strip_tags($this->input->post('xkelas'));
+							$prestasi=strip_tags($this->input->post('xprestasi'));
 
-							$this->m_siswa->update_siswa($kode,$nis,$nama,$jenkel,$kelas,$photo);
+							$this->m_siswa->update_siswa($kode,$nis,$nama,$jenkel,$prestasi,$photo);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/siswa');
 	                    
@@ -117,9 +117,9 @@ class Siswa extends CI_Controller{
 							$nis=strip_tags($this->input->post('xnis'));
 							$nama=strip_tags($this->input->post('xnama'));
 							$jenkel=strip_tags($this->input->post('xjenkel'));
-							$kelas=strip_tags($this->input->post('xkelas'));
+							$prestasi=strip_tags($this->input->post('xprestasi'));
 
-							$this->m_siswa->update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$kelas);
+							$this->m_siswa->update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$prestasi);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/siswa');
 	            } 

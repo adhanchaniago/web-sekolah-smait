@@ -2,25 +2,25 @@
 class M_siswa extends CI_Model{
 
 	function get_all_siswa(){
-		$hsl=$this->db->query("SELECT tbl_siswa.*,kelas_nama FROM tbl_siswa JOIN tbl_kelas ON siswa_kelas_id=kelas_id");
+		$hsl=$this->db->query("SELECT * FROM tbl_siswa");
 		return $hsl;
 	}
 
-	function simpan_siswa($nis,$nama,$jenkel,$kelas,$photo){
-		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_kelas_id,siswa_photo) VALUES ('$nis','$nama','$jenkel','$kelas','$photo')");
+	function simpan_siswa($nis,$nama,$jenkel,$prestasi,$photo){
+		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_prestasi,siswa_photo) VALUES ('$nis','$nama','$jenkel','$prestasi','$photo')");
 		return $hsl;
 	}
-	function simpan_siswa_tanpa_img($nis,$nama,$jenkel,$kelas){
-		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_kelas_id) VALUES ('$nis','$nama','$jenkel','$kelas')");
+	function simpan_siswa_tanpa_img($nis,$nama,$jenkel,$prestasi){
+		$hsl=$this->db->query("INSERT INTO tbl_siswa (siswa_nis,siswa_nama,siswa_jenkel,siswa_prestasi) VALUES ('$nis','$nama','$jenkel','$prestasi')");
 		return $hsl;
 	}
 
-	function update_siswa($kode,$nis,$nama,$jenkel,$kelas,$photo){
-		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas',siswa_photo='$photo' WHERE siswa_id='$kode'");
+	function update_siswa($kode,$nis,$nama,$jenkel,$prestasi,$photo){
+		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_prestasi='$prestasi',siswa_photo='$photo' WHERE siswa_id='$kode'");
 		return $hsl;
 	}
-	function update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$kelas){
-		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_kelas_id='$kelas' WHERE siswa_id='$kode'");
+	function update_siswa_tanpa_img($kode,$nis,$nama,$jenkel,$prestasi){
+		$hsl=$this->db->query("UPDATE tbl_siswa SET siswa_nis='$nis',siswa_nama='$nama',siswa_jenkel='$jenkel',siswa_prestasi='$prestasi' WHERE siswa_id='$kode'");
 		return $hsl;
 	}
 	function hapus_siswa($kode){
@@ -29,11 +29,11 @@ class M_siswa extends CI_Model{
 	}
 
 	function siswa(){
-		$hsl=$this->db->query("SELECT tbl_siswa.*,kelas_nama FROM tbl_siswa JOIN tbl_kelas ON siswa_kelas_id=kelas_id");
+		$hsl=$this->db->query("SELECT * FROM tbl_siswa");
 		return $hsl;
 	}
 	function siswa_perpage($offset,$limit){
-		$hsl=$this->db->query("SELECT tbl_siswa.*,kelas_nama FROM tbl_siswa JOIN tbl_kelas ON siswa_kelas_id=kelas_id limit $offset,$limit");
+		$hsl=$this->db->query("SELECT * FROM tbl_siswa");
 		return $hsl;
 	}
 

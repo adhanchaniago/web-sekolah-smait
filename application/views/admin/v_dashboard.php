@@ -11,9 +11,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>M-Sekolah | Dashboard</title>
+  <title>Administrator | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/iconsmait.jpg'?>">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
@@ -58,6 +58,14 @@
         <li class="active">
           <a href="<?php echo base_url().'admin/dashboard'?>">
             <i class="fa fa-home"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
+             <li>
+          <a href="<?php echo base_url().'admin/background'?>">
+            <i class="fa fa-paint-brush"></i> <span>Background</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
@@ -141,19 +149,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
+            <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Prestasi Siswa</a></li>
 
           </ul>
         </li>
 
-         <li>
-          <a href="<?php echo base_url().'admin/pendaftaran'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Calon Siswa</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
+      
         <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
@@ -173,7 +174,7 @@
         </li>
 
          <li>
-          <a href="<?php echo base_url().'administrator/logout'?>">
+          <a href="<?php echo base_url().'admin/login'?>">
             <i class="fa fa-sign-out"></i> <span>Sign Out</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
@@ -437,12 +438,9 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2017 <a href="http://mfikri.com">M Fikri Setiadi</a>.</strong> All rights reserved.
-  </footer>
+  <?php include 'footer.php';
+
+  ?>
 
 
 </div>

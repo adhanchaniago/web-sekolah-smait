@@ -302,7 +302,7 @@ p {
   font-size: 17px; }
 
 a {
-  color: #cbb58b;
+  color: #080808;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -1031,7 +1031,7 @@ a {
    FOOTER
    ============================================================== */
 footer {
-  background: #2d2d2d;
+  background: #928c8c;
   padding: 60px 0 100px; }
 
 .subscribe {
@@ -1093,7 +1093,7 @@ footer {
   color: #969696; }
 
 .btn-warning {
-  background: #cbb58b;
+  background: #3490d2;
   border: none;
   border-radius: 3px;
   padding: 17px 34px;
@@ -1144,7 +1144,7 @@ footer {
   .sitemap ul li {
     list-style: none; }
     .sitemap ul li a {
-      color: #c4c4c4;
+      color: #ffffff;
       font-size: 17px;
       line-height: 2; }
     .sitemap ul li :hover {
@@ -1159,7 +1159,7 @@ footer h3 {
   padding: 60px 0 0; }
 
 .address p {
-  color: #c4c4c4;
+  color: #ffffff;
   padding: 16px 0 0; }
   .address p span {
     color: #fff; }
@@ -2366,7 +2366,7 @@ p.blogpost-rply {
   margin: 0 0 24px; }
 
 .event-date {
-  background: #cbb58b;
+  background:#0de664;
   padding: 20px 5px; }
   .event-date h4 {
     font-size: 76px;
@@ -2382,10 +2382,10 @@ p.blogpost-rply {
     display: block; }
 
 .event-time {
-  background: #b39a6b;
+  background: #0c650b;
   padding: 8px 0;
   display: block;
-  color: #e8dabe;
+  color: #f5f5f5;
   text-align: center; }
 
 .event-heading {
@@ -2429,11 +2429,11 @@ p.blogpost-rply {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border-bottom: 2px solid #cbb58b;
+  border-bottom: 2px solid #101010;
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   border-top: 1px solid #fff;
-  color: #cbb58b; }
+  color: #101010; }
 
 .nav-tabs {
   border: none;
@@ -2962,7 +2962,7 @@ div.panel {
   transition: 0.5s; }
 
 .contact-option {
-  border-right: 1px solid #ad9566;
+  border-right: 1px solid #f1f1f1;
   padding: 45px 64px; }
   .contact-option .form-control {
     border-color: transparent; }
@@ -3035,10 +3035,10 @@ div.panel {
 
 .about-style2 img {
   margin: 0;
-  border-radius: 50%; }
+  }
 
 .about-style2 .about-img {
-  width: 200px;
+  width: 700px;
   height: 200px;
   margin: 0 auto; }
 
@@ -3529,10 +3529,10 @@ div.panel {
 
 .header-topbar {
   padding: 10px;
-  background: #2d2d2d; }
+  background: #14a52c; }
 
 .header-top_address {
-  color: #d8d8d8;
+  color: #f5f0f0;
   font-size: 15px; }
   .header-top_address .header-top_list {
     display: inline-block;
