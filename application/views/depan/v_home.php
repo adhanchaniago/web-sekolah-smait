@@ -124,39 +124,42 @@
                             foreach ($gambar_1->result_array() as $i) :
 
                        $bg_gambar=$i['bg_gambar'];?>
-
-                    <img class="d-block" src="<?php echo base_url().'assets/images/'.$bg_gambar;?>" alt="First slide">
+                    <img class="d-block" src="<?php echo base_url().'assets/images/'.$bg_gambar;?>" alt="Second slide">
                      <?php endforeach;?>
-
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
-                           
+                            <h1>Bepikir Kreaftif &amp; Inovatif</h1>
+                            <h4>Bagi kami kreativitas merupakan gerbang masa depan.<br> kreativitas akan mendorong inovasi. <br> Itulah yang kami lakukan.</h4>
                             <div class="slider-btn">
-                                
+                                <a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          <div class="carousel-item">
+           <?php 
+                            foreach ($gambar_2->result_array() as $i) :
+
+                       $bg_gambar=$i['bg_gambar'];?>
+                    <img class="d-block" src="<?php echo base_url().'assets/images/'.$bg_gambar;?>"  style="width:2000px; height:783px" alt="Third slide">
+                    <?php endforeach;?>
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+                            <h1>Proses Belajar Interatif</h1>
+                            <h4>Kami membuat proses belajar mengajar menjadi lebih interatif.<br> dengan demikian siswa lebih menyukai <br>proses belajar.</h4>
+                            <div class="slider-btn">
+                                <a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                   <?php 
-                            foreach ($gambar_2->result_array() as $i) :
-
-                       $bg_gambar=$i['bg_gambar'];?>
-                    <img class="d-block" src="<?php echo base_url().'assets/images/'.$bg_gambar;?>" alt="Second slide">
-                     <?php endforeach;?>
+                    <img class="d-block" src="<?php echo base_url().'theme/images/IMG_1008.JPG'?>" alt="Third slide">
                     <div class="carousel-caption d-md-block">
-                     
-                    </div>
-                </div>
-                <div class="carousel-item">
-                  <?php 
-                            foreach ($gambar_3->result_array() as $i) :
-
-                       $bg_gambar=$i['bg_gambar'];?>
-                    <img class="d-block" src="<?php echo base_url().'assets/images/'.$bg_gambar;?>" alt="Third slide">
-                      <?php endforeach;?>
-                    <div class="carousel-caption d-md-block">
-                        
+                        <div class="slider_title">
+                            
+                            
+                        </div>
                     </div>
                 </div>
             </div>

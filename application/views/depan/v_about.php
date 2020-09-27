@@ -114,17 +114,21 @@
         <div class="row">
             <div class="col-md-7">
                 <h2>Kata Sambutan</h2>
-                <p>Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas karunia dan hidayah-Nya,
-                  sehingga kita semua dapat membaktikan segala hal yang kita miliki untuk kemajuan dunia pendidikan.
-                  Apapun bentuk dan sumbangsih yang kita berikan, jika dilandasi niat yang tulus tanpa memandang imbalan
-                  apapun akan menghasilkan mahakarya yang agung untuk bekal kita dan generasi setelah kita.
-                  Pendidikan adalah harga mati untuk menjadi pondasi bangsa dan negara dalam menghadapi perkembangan zaman.
+                <p>Assalamu'alaikum Wa rahmatullahi wa barakatauh</p>
+                <p>Innal hamdalillah, hamdan syukron Laa haula walaa quwwata illa billah, segala puji bagi Allah Rabb semesta alam,
+                   sholawat dan salam untuk Rasulullah SAW, keluarganya,para sahabat, para tabi'in, dan pengikutnya yang istiqomah.
                 </p>
-                <p>Hal ini seiring dengan penguasaan teknologi untuk dimanfaatkan sebaik mungkin,
-                  sehingga menciptakan iklim kondusif dalam ranah keilmuan. Dengan konsep yang kontekstual dan efektif,
-                  kami mengejewantahkan nilai-nilai pendidikan yang tertuang dalam visi misi M-School,
-                  sebagai panduan hukum dalam menjabarkan tujuan hakiki pendidikan.
+                <p>SMAIT Asy-syukriyyah adalah sekolah yang kelak mampu bersaing secara global dengan menguasai teknologi dengan landasan karakter mulia yang bernilaikan tauhid
+                dan akhlak mulia. Metode sekolah full day juga membantu perubahan akhlak da sikap menuju pribadi yang lebik baik juga di lengkapi dengan hafalan Al-qur'an yang telah kalian miliki, 
+                insya Allah kita akan berupaya mewujudkan cita-cita bersama yakni hadirnya generasi unggul yang siap bersaing secara luas, serta menjadi hamba Allah yang mampu
+                memberi maanfaat bagi diri,keluarga, serta sebanyak-banyaknya ummat.
                 </p>
+                <p>
+                    Dari hati yang paling dalam kami sampaikan Jazakumullohu khairan katsiira terima kasih yang sebesar-besarnya kepada Ayah/bunda para orang tua yang telah menitipkan putra/i-nya di sekolah kami.
+                    Pintu sekolah ini akan selalu terbuka untuk ananda sekalian sebagai keluarga SMAIT Asy-syukriyyah.
+                </p>
+
+                <p>Wassalamualaikum warahmatullahi wabarakatuh.</p>
                 </div>
                 <div class="col-md-5">
                     <img src="<?php echo base_url().'theme/images/bucici.png'?>" class="img-fluid" alt="#">
@@ -144,18 +148,18 @@
                     <div class="single-item">
                         <div class="quote">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            <p class="quote_text">MSCHOOL benar-benar mengagumkan. Saya sangat senang bisa bergabung dengan MSCHOOL dan menjadi siswa terbaik tahun 2018.</p>
+                            <p class="quote_text">Saya sangat bersyukur bersekolah di sekolah ini .</p>
                             <div class="testi-img_block">
-                                <img src="<?php echo base_url().'theme/images/student-1.png'?>" class="img-fluid" alt="#">
-                                <p><span>Hernandez Alvaro</span>Siswa Terbaik 2018</p>
+                                <img src="<?php echo base_url().'theme/images/iconsiswa.png'?>" class="img-fluid" alt="#">
+                                <p><span>Lutfi Satria Affandi</span>Alumni XII MIPA 2 (2018/2019)</p>
                             </div>
                         </div>
                         <div class="quote">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            <p class="quote_text">MSCHOOL benar-benar mengagumkan. Saya sangat senang bisa bergabung dengan MSCHOOL dan menjadi siswa terbaik tahun 2017. </p>
+                            <p class="quote_text">Senang Sekali belajar di assta, sekolah yang luar biasa mengertu kebutuhan murid-muridnya </p>
                             <div class="testi-img_block">
-                                <img src="<?php echo base_url().'theme/images/student-2.png'?>" class="img-fluid" alt="#">
-                                <p><span>Elanoar Rigby</span>Siswa Terbaik 2017</p>
+                                <img src="<?php echo base_url().'theme/images/iconsiswa.png'?>" class="img-fluid" alt="#">
+                                <p><span>M. Jibril Rizkullah</span>Alumni XII MIPA 2 (2018/2019)</p>
                             </div>
                         </div>
                     </div>

@@ -37,9 +37,9 @@ class Background extends CI_Controller{
 	                        $config['source_image']='./assets/images/'.$gbr['file_name'];
 	                        $config['create_thumb']= FALSE;
 	                        $config['maintain_ratio']= FALSE;
-	                        $config['quality']= '60%';
-	                        $config['width']= 500;
-	                        $config['height']= 400;
+	                        $config['quality']= '100%';
+	                        $config['width']= 2000;
+	                        $config['height']= 783;
 	                        $config['new_image']= './assets/images/'.$gbr['file_name'];
 	                        $this->load->library('image_lib', $config);
 	                        $this->image_lib->resize();
@@ -79,9 +79,9 @@ class Background extends CI_Controller{
 	                        $config['source_image']='./assets/images/'.$gbr['file_name'];
 	                        $config['create_thumb']= FALSE;
 	                        $config['maintain_ratio']= FALSE;
-	                        $config['quality']= '60%';
-	                        $config['width']= 500;
-	                        $config['height']= 400;
+	                        $config['quality']= '100%';
+	                        $config['width']= 2000;
+	                        $config['height']= 783;
 	                        $config['new_image']= './assets/images/'.$gbr['file_name'];
 	                        $this->load->library('image_lib', $config);
 	                        $this->image_lib->resize();

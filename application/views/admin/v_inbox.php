@@ -202,6 +202,7 @@
                 <tr>
 					          <th style="width:70px;">#Tanggal</th>
                     <th>Nama</th>
+                    <th>No hp</th>
                     <th>Email</th>
                     <th>Pesan</th>
                     <th style="text-align:right;">Aksi</th>
@@ -214,14 +215,17 @@
   					   $no++;
                        $inbox_id=$i['inbox_id'];
                        $inbox_nama=$i['inbox_nama'];
+                       $inbox_kontak = $i['inbox_kontak'];
                        $inbox_email=$i['inbox_email'];
                        $inbox_msg=$i['inbox_pesan'];
                        $tanggal=$i['tanggal'];
+
 
                     ?>
                 <tr>
                   <td><?php echo $tanggal;?></td>
                   <td><?php echo $inbox_nama;?></td>
+                    <td><?php echo $inbox_kontak;?></td>
                   <td><?php echo $inbox_email;?></td>
                   <td><?php echo $inbox_msg;?></td>
                   <td style="text-align:right;">
